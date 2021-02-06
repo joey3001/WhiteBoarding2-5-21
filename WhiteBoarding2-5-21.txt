@@ -1,0 +1,44 @@
+array de-duping 
+removed duplicates from an array 
+no filter and with filter 
+with and without recursion 
+
+example input = [7,9,"hi",12,"hi",7,53] 
+output = [7,9,'hi',12,53] 
+
+example input #2 = [1,6,3,"hey","hey",6,8] 
+output = [1,6,3,"hey",8]
+
+will always be passed an array. 
+
+example input #3 = [1,"1",2] 
+not considered a duplicate. 
+
+check each member of the array to see if it is futher down in the array or not 
+if the member is found later in the array than the current position, remove it. 
+
+for(length of the array) { 
+	for(from your current index to the end of the array = j) {
+			if(array[i] == array[j]) {
+      	array.split(j,j); //remove this member of the array 
+    }
+  }
+  return your array 
+}
+
+function deDuping(array) {
+let resultArray = []; 
+	for(let i = 0; i < array.length < i++) { 
+  	for(let j = i + 1; j < array.length < j++) { 
+			if(array[i] == array[j]) {
+      	array[j] = "";    
+      }
+      if(array[i] == "") {  1 
+      }
+      else {
+      	resultArray.push(array[i])
+      }
+		} 
+	}
+  return resultArray; 
+} 
